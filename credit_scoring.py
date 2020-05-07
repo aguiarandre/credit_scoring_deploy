@@ -14,13 +14,12 @@ st.sidebar.title('ML Deploy :smile:')
 
 @st.cache
 def loaders():
-    woohoo = open('woohoo.mp3', 'rb')
     pipeline = joblib.load('model_v004.pkl')
     explainer = joblib.load('explainer_v002.pkl')
 
-    return woohoo, pipeline, explainer
+    return pipeline, explainer
 
-woohoo, pipeline, explainer = loaders()
+pipeline, explainer = loaders()
 
 def streamlit_features():
     st.header('Streamlit features')
