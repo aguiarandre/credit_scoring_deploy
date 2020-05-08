@@ -8,7 +8,7 @@ import shap
 import streamlit as st
 import time
 
-st.title('Machine Learning Model Deployment')
+st.title('Machine Learning Model Deployment - Tutorial')
 
 st.sidebar.title('ML Deploy :smile:')
 
